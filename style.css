@@ -1,53 +1,158 @@
-body{
+body {
     background-color: #FFBFA9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
 
 }
 
-table{
+table {
     margin: auto;
-    width: 40%;
-
+    width: 50%;
+    font-size: large;
 }
 
-table,td,th{
+table,
+td,
+th {
     border: 1px solid black;
     border-collapse: collapse;
 }
 
-th{
+th {
     background-color: #f7693a;
 }
 
-tr:nth-child(even){
+tr:nth-child(even) {
     background-color: #db6d49;
 }
 
-a:hover{
+tr:hover {
+    background-color: #c54f40;
+}
+
+a:hover {
     color: rgb(63, 0, 0);
 }
 
-a:visited{
+a:visited {
     color: gray;
 }
 
-a:active{
+a:active {
     color: white;
 }
 
-img{
+img {
     width: 350px;
     height: 300px;
+    border-radius: 5%;
 }
 
-.gallery{
+.gallery {
     display: flex;
     justify-content: space-around;
+
 }
 
-.intro{
+.welcomeline {
     text-align: center;
     background-color: #bd3b10;
     height: 100px;
     width: 100%;
     margin: 0;
+    padding-top: 12px;
+}
+
+
+button {
+    padding: 3px;
+    border-radius: 10px;
+    height: 30px;
+    width: 70px;
+    background-color: #ff4000;
+}
+
+button:hover {
+    background-color: red;
+}
+
+.introduction {
+    text-align: center;
+}
+
+th,
+td {
+    padding: 10px;
+    text-align: center;
+}
+
+.name {
+    text-align: center;
+    font-weight: bold;
+}
+
+.hozlist {
+    display: inline;
+}
+
+p {
+    font-size: 20px;
+}
+
+li {
+    font-size: 20px;
+}
+
+ul>li {
+    color: rgb(164, 43, 43);
+}
+
+.description {
+    border: 2px solid #bd3b10;
+}
+
+.introduction,
+.gallery,
+.data-table,
+.lists,
+.description {
+    padding: 10px;
+}
+
+.parent-image {
+    text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .gallery {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+}
+
+@media screen and (max-width: 384px) {
+    img {
+        width: 300px;
+        height: 270px;
+        border-radius: 5%;
+    }
+
+}
+
+@media screen and (max-width: 355px) {
+    .data-table {
+        padding-left: 10px;
+    }
+}
+
+.image {
+    background-color: #4CAF50;
+    transition: box-shadow;
+}
+
+.image:hover {
+    box-shadow: 10px 10px 20px rgba(36, 36, 36, 0.5);
 }
